@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — ANU CDE Student App</title>
+<meta name="description" content="Privacy Policy for the Centre for Distance Education student mobile application, Acharya Nagarjuna University.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='none' stroke='%23123A6B' stroke-width='7'/><text x='50' y='63' font-size='34' font-family='Arial,sans-serif' font-weight='bold' fill='%23123A6B' text-anchor='middle'>ANU</text></svg>">
+<style>
+/* ══════════════════════════════════════════════════════════════════════
+   ANU CDE — Privacy Policy
+   Single file. No external fonts, scripts or trackers.
+   ══════════════════════════════════════════════════════════════════════ */
+:root{
+  --navy:#123A6B; --navy-lt:#2B5C99; --maroon:#8E2B34; --teal:#1B7F79;
+  --gold:#C79A26;
+  --ink:#12202F; --soft:#4A5A6D; --faint:#8593A3;
+  --bg:#F5F7FA; --card:#FFFFFF; --rule:#E2E8F0; --tint:#EAF1FA;
+  --maxw:1120px;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --navy:#5B8FD4; --navy-lt:#7BA7E0; --maroon:#D97B84; --teal:#4EC3BB;
+    --ink:#E6EDF5; --soft:#A9B8C9; --faint:#7C8A9A;
+    --bg:#0E141C; --card:#151D28; --rule:#25313F; --tint:#1A2634;
+  }
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:92px;}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+       "Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ───────────────────────────────────────────────────────────── header */
+header{
+  background:linear-gradient(135deg,#123A6B,#2B5C99);
+  color:#fff; padding:0 20px;
+}
+@media (prefers-color-scheme:dark){
+  header{background:linear-gradient(135deg,#0B1F3A,#123A6B);}
+}
+.head-inner{max-width:var(--maxw);margin:0 auto;padding:30px 0 34px;}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.crest{
+  flex:0 0 auto;width:48px;height:48px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.55);
+  background:rgba(255,255,255,.12);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:14px;letter-spacing:1px;
+}
+.brand h2{margin:0;font-size:15px;font-weight:800;letter-spacing:.4px;line-height:1.35;}
+.brand p{margin:2px 0 0;font-size:12.5px;color:rgba(255,255,255,.78);letter-spacing:.4px;}
+h1{margin:0 0 10px;font-size:clamp(26px,5vw,40px);font-weight:800;letter-spacing:-.6px;line-height:1.15;}
+.lede{margin:0 0 20px;font-size:clamp(14px,2.4vw,16.5px);color:rgba(255,255,255,.85);max-width:640px;}
+.pills{display:flex;flex-wrap:wrap;gap:9px;}
+.pill{
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.26);
+  border-radius:20px;padding:5px 13px;font-size:12.5px;font-weight:600;
+}
+
+/* ─────────────────────────────────────────────────────────── layout */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px 70px;
+      display:grid;grid-template-columns:238px 1fr;gap:38px;}
+@media (max-width:900px){ .wrap{grid-template-columns:1fr;gap:0;} }
+
+/* ────────────────────────────────────────────────────────────── nav */
+nav{position:sticky;top:24px;align-self:start;padding-top:32px;}
+nav .navtitle{
+  font-size:11px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;
+  color:var(--faint);margin-bottom:12px;padding-left:12px;
+}
+nav ol{list-style:none;margin:0;padding:0;counter-reset:s;}
+nav li{counter-increment:s;}
+nav a{
+  display:flex;gap:9px;padding:7px 12px;border-radius:7px;
+  color:var(--soft);text-decoration:none;font-size:13.4px;line-height:1.4;
+  border-left:2px solid transparent;transition:.16s;
+}
+nav a::before{content:counter(s) ".";color:var(--faint);font-weight:700;flex:0 0 18px;}
+nav a:hover{background:var(--tint);color:var(--navy);}
+nav a.active{background:var(--tint);color:var(--navy);font-weight:700;border-left-color:var(--navy);}
+nav a.active::before{color:var(--navy);}
+@media (max-width:900px){
+  nav{position:static;padding:18px 0 0;}
+  nav .navtitle{display:none;}
+  nav ol{display:none;background:var(--card);border:1px solid var(--rule);
+         border-radius:10px;padding:6px;margin-top:8px;}
+  nav ol.open{display:block;}
+  .navtoggle{
+    display:flex;width:100%;align-items:center;justify-content:space-between;
+    background:var(--card);border:1px solid var(--rule);border-radius:10px;
+    padding:13px 15px;font:inherit;font-size:14px;font-weight:700;
+    color:var(--ink);cursor:pointer;
+  }
+  .navtoggle span.arrow{transition:transform .2s;color:var(--navy);}
+  .navtoggle[aria-expanded="true"] span.arrow{transform:rotate(180deg);}
+}
+@media (min-width:901px){ .navtoggle{display:none;} }
+
+/* ────────────────────────────────────────────────────────── content */
+main{padding-top:32px;min-width:0;}
+.updated{
+  background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--teal);
+  border-radius:10px;padding:14px 17px;margin-bottom:28px;
+  font-size:13.6px;color:var(--soft);
+}
+.updated b{color:var(--ink);}
+
+section{
+  background:var(--card);border:1px solid var(--rule);border-radius:13px;
+  padding:26px 28px;margin-bottom:18px;
+}
+@media (max-width:600px){ section{padding:20px 18px;border-radius:11px;} }
+
+section > h2{
+  margin:0 0 14px;font-size:20px;font-weight:800;color:var(--navy);
+  letter-spacing:-.2px;line-height:1.3;
+  display:flex;align-items:baseline;gap:11px;
+}
+section > h2 .num{
+  flex:0 0 auto;font-size:12px;font-weight:800;color:#fff;background:var(--navy);
+  border-radius:5px;padding:3px 8px;letter-spacing:.5px;
+}
+@media (prefers-color-scheme:dark){ section > h2 .num{color:#0E141C;} }
+
+h3{margin:22px 0 9px;font-size:15.5px;font-weight:700;color:var(--maroon);}
+p{margin:0 0 13px;}
+p:last-child,ul:last-child,table:last-child{margin-bottom:0;}
+a{color:var(--navy-lt);}
+a:hover{color:var(--navy);}
+strong{font-weight:700;}
+ul{margin:0 0 13px;padding-left:22px;}
+li{margin-bottom:7px;}
+li::marker{color:var(--navy-lt);}
+
+/* ──────────────────────────────────────────────────────────── table */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0 16px;}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:520px;}
+thead th{
+  background:var(--navy);color:#fff;text-align:left;padding:10px 13px;
+  font-size:12.5px;font-weight:700;letter-spacing:.3px;
+}
+@media (prefers-color-scheme:dark){ thead th{color:#0E141C;} }
+tbody td{padding:10px 13px;border:1px solid var(--rule);vertical-align:top;line-height:1.55;}
+tbody tr:nth-child(even){background:var(--tint);}
+
+/* ────────────────────────────────────────────────────────── callout */
+.note{
+  border-radius:10px;padding:14px 16px;margin:15px 0;font-size:14.2px;line-height:1.62;
+  background:var(--tint);border:1px solid var(--rule);border-left:3px solid var(--navy);
+}
+.note.warn{border-left-color:var(--gold);}
+.note.key{border-left-color:var(--maroon);}
+.note b{display:block;margin-bottom:4px;color:var(--ink);}
+
+/* ───────────────────────────────────────────────────────── contact */
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px;margin-top:6px;}
+.cbox{background:var(--tint);border:1px solid var(--rule);border-radius:10px;padding:15px 16px;}
+.cbox .lbl{font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--faint);margin-bottom:6px;}
+.cbox .val{font-size:14.2px;line-height:1.6;color:var(--ink);word-break:break-word;}
+.cbox .val a{word-break:break-all;}
+
+/* ────────────────────────────────────────────────────────── footer */
+footer{
+  background:var(--card);border-top:1px solid var(--rule);
+  padding:30px 20px;text-align:center;color:var(--faint);font-size:13.2px;
+}
+footer .fin{max-width:var(--maxw);margin:0 auto;}
+footer strong{color:var(--soft);display:block;margin-bottom:5px;font-size:13.8px;}
+
+/* ────────────────────────────────────────────────────────── to top */
+#top{
+  position:fixed;right:20px;bottom:20px;width:44px;height:44px;border-radius:50%;
+  background:var(--navy);color:#fff;border:0;cursor:pointer;font-size:19px;
+  box-shadow:0 4px 14px rgba(0,0,0,.22);
+  opacity:0;visibility:hidden;transform:translateY(8px);transition:.22s;
+  display:flex;align-items:center;justify-content:center;
+}
+#top.show{opacity:1;visibility:visible;transform:none;}
+@media (prefers-color-scheme:dark){ #top{color:#0E141C;} }
+
+/* ─────────────────────────────────────────────────────────── print */
+@media print{
+  header{background:#123A6B !important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  nav,#top,.navtoggle{display:none !important;}
+  .wrap{grid-template-columns:1fr;max-width:100%;padding:0;}
+  section{border:0;border-bottom:1px solid #ccc;border-radius:0;padding:14px 0;
+          break-inside:avoid;page-break-inside:avoid;}
+  body{background:#fff;font-size:11pt;}
+  a{color:#123A6B;text-decoration:none;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head-inner">
+    <div class="brand">
+      <div class="crest">ANU</div>
+      <div>
+        <h2>ACHARYA NAGARJUNA UNIVERSITY</h2>
+        <p>Centre for Distance Education &middot; Nagarjuna Nagar 522510</p>
+      </div>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="lede">
+      How the Centre for Distance Education student mobile application collects,
+      uses, shares and protects your information.
+    </p>
+    <div class="pills">
+      <span class="pill">ANU CDE Student App</span>
+      <span class="pill">Android</span>
+      <span class="pill">Version 2.2</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav>
+    <button class="navtoggle" aria-expanded="false" id="navBtn">
+      <span>Jump to a section</span><span class="arrow">&#9662;</span>
+    </button>
+    <div class="navtitle">Contents</div>
+    <ol id="toc">
+      <li><a href="#intro">Who we are</a></li>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#use">How we use it</a></li>
+      <li><a href="#share">Sharing and third parties</a></li>
+      <li><a href="#ai">The Help Desk chatbot</a></li>
+      <li><a href="#retention">How long we keep it</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#delete">Deleting your data</a></li>
+      <li><a href="#security">How we protect it</a></li>
+      <li><a href="#permissions">App permissions</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <div class="updated">
+      <b>Last updated:</b> 29 September 2026 &nbsp;&middot;&nbsp;
+      <b>Effective from:</b> 29 September 2026
+    </div>
+
+    <!-- 1 ─────────────────────────────────────────────────────────── -->
+    <section id="intro">
+      <h2><span class="num">1</span> Who we are</h2>
+      <p>
+        The <strong>ANU CDE Student App</strong> is the official mobile
+        application of the Centre for Distance Education, Acharya Nagarjuna
+        University, Nagarjuna Nagar &ndash; 522510, Guntur District, Andhra
+        Pradesh, India.
+      </p>
+      <p>
+        The University is the <strong>data fiduciary</strong> for the
+        information described in this policy. The app is provided only to
+        students enrolled in a distance-education programme of the Centre. It
+        is not open to the general public, and there is no self sign-up &mdash;
+        your account exists because you are already enrolled with us.
+      </p>
+      <p>
+        This policy explains what the app collects, why, who else sees it, and
+        what you can ask us to do about it. If anything here is unclear, please
+        contact the Grievance Officer listed in section&nbsp;13.
+      </p>
+    </section>
+
+    <!-- 2 ─────────────────────────────────────────────────────────── -->
+    <section id="collect">
+      <h2><span class="num">2</span> Information we collect</h2>
+
+      <h3>2.1 From existing university records</h3>
+      <p>
+        Most of what the app shows was already held by the University from your
+        admission application. The app displays it to you; it does not create it.
+      </p>
+      <div class="tw">
+      <table>
+        <thead><tr><th>Category</th><th>What it includes</th></tr></thead>
+        <tbody>
+          <tr><td>Identity</td><td>Enrollment number, application number, hall ticket number, name as per SSC and as per Aadhaar, date of birth, gender, photograph</td></tr>
+          <tr><td>Family</td><td>Father&rsquo;s name, mother&rsquo;s name</td></tr>
+          <tr><td>Contact</td><td>Mobile number, email address, postal address, district, state, PIN code</td></tr>
+          <tr><td>Academic</td><td>Course, batch, medium, learner support centre, qualifying examination, year of passing, percentage, verification status</td></tr>
+          <tr><td>Demographic</td><td>Reservation category, religion, marital status, nationality &mdash; as recorded in your admission application</td></tr>
+          <tr><td>Government ID</td><td>Aadhaar number, as recorded at admission</td></tr>
+          <tr><td>Financial</td><td>Fee payable, paid, concession and dues; receipt numbers and payment dates</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="note key">
+        <b>About your Aadhaar number</b>
+        The app <strong>never displays your full Aadhaar number</strong>. Only
+        the last four digits are shown, in the form XXXX XXXX 1789. It is used
+        solely to match your record and is never shared with any third party.
+      </div>
+
+      <h3>2.2 What you give us through the app</h3>
+      <ul>
+        <li><strong>Your password.</strong> On your first sign-in you use your date of birth, then you choose a password. It is stored only as a one-way cryptographic hash &mdash; nobody at the Centre can read it.</li>
+        <li><strong>Grievances.</strong> The category, subject, description and every message you send in a grievance thread.</li>
+        <li><strong>Help Desk questions.</strong> The questions you type to the in-app assistant. See section&nbsp;5 &mdash; these are processed by a third party.</li>
+      </ul>
+
+      <h3>2.3 Collected automatically</h3>
+      <ul>
+        <li><strong>Sign-in records</strong> &mdash; the date, time and IP address of each sign-in, kept as a security measure.</li>
+        <li><strong>Session token</strong> &mdash; a temporary token stored on your device to keep you signed in. It expires after 24 hours and is deleted when you sign out.</li>
+      </ul>
+      <div class="note">
+        <b>What we do not collect</b>
+        No location or GPS data. No contacts, call logs or SMS. No advertising
+        identifier. No third-party analytics or tracking. The app contains no
+        advertising, and we do not build behavioural profiles of students.
+      </div>
+    </section>
+
+    <!-- 3 ─────────────────────────────────────────────────────────── -->
+    <section id="use">
+      <h2><span class="num">3</span> How we use your information</h2>
+      <div class="tw">
+      <table>
+        <thead><tr><th>Purpose</th><th>Information used</th></tr></thead>
+        <tbody>
+          <tr><td>Signing you in and keeping your account secure</td><td>Enrollment number, date of birth, password hash, sign-in records</td></tr>
+          <tr><td>Showing your profile and academic record</td><td>Identity, academic, contact and demographic information</td></tr>
+          <tr><td>Producing your No Dues certificate and fee statement</td><td>Identity and financial information</td></tr>
+          <tr><td>Showing study material for your course</td><td>Course and department</td></tr>
+          <tr><td>Handling your grievance and replying to you</td><td>Grievance content, enrollment number, name</td></tr>
+          <tr><td>Sending you notices, alerts and reminders</td><td>Department, batch, fee status, verification status</td></tr>
+          <tr><td>Answering your Help Desk questions</td><td>Your question, plus your name, course and fee-due status</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>
+        Our lawful basis is the performance of the University&rsquo;s
+        educational and administrative functions in relation to your enrolment,
+        and compliance with statutory record-keeping obligations.
+      </p>
+      <div class="note warn">
+        <b>Targeted messages</b>
+        Alerts and reminders may be sent to a group &mdash; for example
+        &ldquo;students with pending fee&rdquo; or &ldquo;students of the
+        Botany department&rdquo;. Grouping happens on our server using the
+        records described above. Staff who send these messages see the size of
+        the group, not a list of who is in it, unless they have deliberately
+        selected named students.
+      </div>
+    </section>
+
+    <!-- 4 ─────────────────────────────────────────────────────────── -->
+    <section id="share">
+      <h2><span class="num">4</span> Sharing and third parties</h2>
+      <p>
+        <strong>We do not sell your personal data. We do not share it for
+        advertising or marketing.</strong> Your information is disclosed only in
+        the following situations.
+      </p>
+      <div class="tw">
+      <table>
+        <thead><tr><th>Who</th><th>What they receive</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Centre staff</strong><br>(Accounts, Records, Examination, Library sections)</td>
+            <td>Your profile, fee record and grievance threads</td>
+            <td>To administer your enrolment and resolve the grievances you raise</td>
+          </tr>
+          <tr>
+            <td><strong>Groq, Inc.</strong><br>United States</td>
+            <td>Your Help Desk question, plus your name, enrollment number, course, batch, support centre and total fee due</td>
+            <td>To generate the assistant&rsquo;s reply. See section&nbsp;5.</td>
+          </tr>
+          <tr>
+            <td><strong>Payment gateway</strong><br>(when online payment is enabled)</td>
+            <td>Your name, enrollment number and the amount payable</td>
+            <td>To process a fee payment you choose to make. Card and bank details are entered on the gateway&rsquo;s own page and are never seen or stored by us.</td>
+          </tr>
+          <tr>
+            <td><strong>Government and statutory bodies</strong></td>
+            <td>Only what the law requires</td>
+            <td>Where the University is legally obliged to report, or to respond to a lawful order</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <!-- 5 ─────────────────────────────────────────────────────────── -->
+    <section id="ai">
+      <h2><span class="num">5</span> The Help Desk chatbot</h2>
+      <p>
+        The app includes a Help Desk assistant that answers questions about the
+        app, your fee status and the Centre. It is powered by an artificial
+        intelligence service operated by <strong>Groq,&nbsp;Inc.</strong>, a
+        company based in the United States.
+      </p>
+      <div class="note key">
+        <b>Please read this before using the Help Desk</b>
+        When you send a message, your question is transmitted to Groq&rsquo;s
+        servers <strong>outside India</strong>, together with your name,
+        enrollment number, course, batch, learner support centre and total fee
+        due. This context is what lets the assistant answer questions such as
+        &ldquo;how much fee do I still owe?&rdquo;
+      </div>
+      <ul>
+        <li><strong>Do not type sensitive information into the Help Desk.</strong> Never enter your password, your full Aadhaar number, or card or bank account details.</li>
+        <li>Your chat is not stored on our servers. It is held only in your device&rsquo;s memory for the duration of the conversation and is cleared when you close the app.</li>
+        <li>Groq processes the message to generate a reply and handles it under its own privacy terms. We do not control Groq&rsquo;s retention practices.</li>
+        <li>The assistant cannot change any university record, make a payment, or view your examination results.</li>
+        <li><strong>Using the Help Desk is entirely optional.</strong> Every feature of the app works without it. If you would rather not have your data sent abroad, simply do not open the Help Desk, and call or email the Centre instead.</li>
+      </ul>
+      <p>
+        Answers from the assistant are generated automatically and may be
+        incomplete or wrong. For anything that affects your fees, examinations
+        or certificates, rely on the official figures in the app or contact the
+        Centre directly.
+      </p>
+    </section>
+
+    <!-- 6 ─────────────────────────────────────────────────────────── -->
+    <section id="retention">
+      <h2><span class="num">6</span> How long we keep your information</h2>
+      <div class="tw">
+      <table>
+        <thead><tr><th>Information</th><th>Kept for</th></tr></thead>
+        <tbody>
+          <tr><td>Academic and admission records, fee and payment records</td><td>Permanently, as the University&rsquo;s statutory academic record</td></tr>
+          <tr><td>Grievances and their message threads</td><td>Three years from the date the grievance is closed</td></tr>
+          <tr><td>Sign-in records</td><td>One year</td></tr>
+          <tr><td>Password hash</td><td>Until you change it, or until your app access is withdrawn</td></tr>
+          <tr><td>Help Desk conversation</td><td>Not stored by us; cleared from your device when the app closes</td></tr>
+          <tr><td>Session token on your device</td><td>24 hours, or until you sign out</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>
+        Academic and financial records cannot be deleted on request, because the
+        University is required to maintain them for degree verification,
+        audit and statutory reporting. This is explained further in section&nbsp;8.
+      </p>
+    </section>
+
+    <!-- 7 ─────────────────────────────────────────────────────────── -->
+    <section id="rights">
+      <h2><span class="num">7</span> Your rights</h2>
+      <p>
+        Under the Digital Personal Data Protection Act,&nbsp;2023 and University
+        policy, you may:
+      </p>
+      <ul>
+        <li><strong>See your information.</strong> The Profile tab in the app already shows you everything we hold about you.</li>
+        <li><strong>Ask us to correct it.</strong> Open <em>Profile &rarr; Request Correction</em> in the app, which files a grievance with the Records Section. You may be asked for a supporting certificate.</li>
+        <li><strong>Ask us to erase it,</strong> subject to the statutory limits in section&nbsp;8.</li>
+        <li><strong>Complain.</strong> Raise a grievance in the app, or contact the Grievance Officer in section&nbsp;13. If you are not satisfied with our response, you may approach the Data Protection Board of India.</li>
+        <li><strong>Decline the Help Desk.</strong> Not using it stops any transfer of your data outside India.</li>
+      </ul>
+      <p>
+        We will acknowledge a request within seven working days and respond
+        within thirty days. There is no fee.
+      </p>
+    </section>
+
+    <!-- 8 ─────────────────────────────────────────────────────────── -->
+    <section id="delete">
+      <h2><span class="num">8</span> Deleting your data</h2>
+      <p>
+        You can ask us to remove your data from the app. Please be clear about
+        what can and cannot be deleted.
+      </p>
+
+      <h3>What we will delete on request</h3>
+      <ul>
+        <li>Your app password, so the account can no longer be signed into</li>
+        <li>Your grievances and their message threads</li>
+        <li>Your sign-in history</li>
+        <li>Your profile photograph</li>
+      </ul>
+
+      <h3>What we cannot delete</h3>
+      <p>
+        Your academic record, admission record and fee and payment history are
+        the University&rsquo;s official records. We are legally required to keep
+        them so that your degree, marks and dues can be verified in future,
+        and so the University can meet its audit and statutory reporting
+        obligations. Deleting your app account does not remove them, and they
+        would remain even if the app did not exist.
+      </p>
+
+      <h3>How to request deletion</h3>
+      <p>
+        Email <a href="mailto:director_cde@anu.ac.in">director_cde@anu.ac.in</a>
+        from the email address in your student record, with the subject line
+        <strong>&ldquo;App data deletion request&rdquo;</strong>, stating your
+        name and enrollment number. You may also raise a grievance in the app
+        under the category <em>Other</em>.
+      </p>
+      <p>
+        We will confirm within seven working days and complete the deletion
+        within thirty days.
+      </p>
+    </section>
+
+    <!-- 9 ─────────────────────────────────────────────────────────── -->
+    <section id="security">
+      <h2><span class="num">9</span> How we protect your information</h2>
+      <ul>
+        <li>All traffic between the app and our servers is encrypted with HTTPS.</li>
+        <li>Passwords are stored only as salted one-way hashes and are never logged or emailed.</li>
+        <li>Your session token expires after 24 hours and every request is checked against it, so one student cannot open another student&rsquo;s records.</li>
+        <li>Only your own department&rsquo;s study material, your own fee record and your own grievances are returned to your device.</li>
+        <li>Staff access to the administrative side of the app is restricted, and changes to a grievance are recorded against the member of staff who made them.</li>
+        <li>Location data is stripped from any photograph uploaded by staff.</li>
+      </ul>
+      <p>
+        No system can be guaranteed completely secure. If a breach affects your
+        personal data, we will notify you and the Data Protection Board of India
+        as the law requires. If you believe your account has been accessed by
+        someone else, change your password in the app and tell us at once.
+      </p>
+    </section>
+
+    <!-- 10 ────────────────────────────────────────────────────────── -->
+    <section id="permissions">
+      <h2><span class="num">10</span> App permissions</h2>
+      <div class="tw">
+      <table>
+        <thead><tr><th>Permission</th><th>Why it is needed</th></tr></thead>
+        <tbody>
+          <tr><td>Internet</td><td>To load your records from the University server. Required.</td></tr>
+          <tr><td>Storage / Files</td><td>Only when you save or print a No Dues certificate, or open study material. Asked for at the moment you use the feature.</td></tr>
+          <tr><td>Photos</td><td>Only on the administrative side, so staff can upload a student photograph. Students are never asked for this.</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>
+        The app does not request location, camera, microphone, contacts or SMS
+        permissions. You may refuse any optional permission and still use the
+        rest of the app.
+      </p>
+    </section>
+
+    <!-- 11 ────────────────────────────────────────────────────────── -->
+    <section id="children">
+      <h2><span class="num">11</span> Children</h2>
+      <p>
+        The app is intended for students enrolled in distance-education
+        programmes of the Centre, who are ordinarily eighteen years of age or
+        older. It is not directed at children, and we do not knowingly create
+        accounts for anyone under eighteen except where such a person has been
+        lawfully admitted to a programme of the University.
+      </p>
+      <p>
+        Where an enrolled student is under eighteen, their data is processed
+        only for the educational purposes described in this policy, we do not
+        use it for tracking or behavioural advertising of any kind, and consent
+        is obtained from a parent or lawful guardian at the time of admission as
+        required by the Digital Personal Data Protection Act,&nbsp;2023.
+      </p>
+    </section>
+
+    <!-- 12 ────────────────────────────────────────────────────────── -->
+    <section id="changes">
+      <h2><span class="num">12</span> Changes to this policy</h2>
+      <p>
+        We may update this policy when the app changes or when the law requires
+        it. The date at the top of this page always shows the current version.
+      </p>
+      <p>
+        If a change materially affects how your information is used &mdash; for
+        example a new third-party service, or a new purpose &mdash; we will tell
+        you through a notice in the app before the change takes effect. Please
+        review this page from time to time.
+      </p>
+    </section>
+
+    <!-- 13 ────────────────────────────────────────────────────────── -->
+    <section id="contact">
+      <h2><span class="num">13</span> Contact us</h2>
+      <p>
+        For any question about this policy, or to exercise any of the rights in
+        section&nbsp;7:
+      </p>
+      <div class="contact">
+        <div class="cbox">
+          <div class="lbl">Grievance Officer</div>
+          <div class="val">The Director<br>Centre for Distance Education</div>
+        </div>
+        <div class="cbox">
+          <div class="lbl">Email</div>
+          <div class="val"><a href="mailto:director_cde@anu.ac.in">director_cde@anu.ac.in</a></div>
+        </div>
+        <div class="cbox">
+          <div class="lbl">Phone</div>
+          <div class="val"><a href="tel:+918632346171">0863&nbsp;&ndash;&nbsp;2346171</a><br>Mon to Sat, 10:30 AM &ndash; 5:00 PM</div>
+        </div>
+        <div class="cbox">
+          <div class="lbl">Postal address</div>
+          <div class="val">
+            Centre for Distance Education<br>
+            Acharya Nagarjuna University<br>
+            Nagarjuna Nagar &ndash; 522510<br>
+            Guntur District, Andhra Pradesh, India
+          </div>
+        </div>
+      </div>
+      <p style="margin-top:16px">
+        You can also raise a grievance inside the app &mdash; open the
+        <strong>Grievance</strong> section from the home screen and choose the
+        category <em>Other</em>.
+      </p>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <div class="fin">
+    <strong>Centre for Distance Education, Acharya Nagarjuna University</strong>
+    Nagarjuna Nagar &ndash; 522510, Guntur District, Andhra Pradesh, India<br>
+    Privacy Policy for the ANU CDE Student App &middot; Last updated 29 September 2026
+  </div>
+</footer>
+
+<button id="top" aria-label="Back to top" title="Back to top">&#8593;</button>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ── mobile contents toggle ───────────────────────────────────── */
+  var btn = document.getElementById("navBtn");
+  var toc = document.getElementById("toc");
+  if (btn && toc) {
+    btn.addEventListener("click", function () {
+      var open = toc.classList.toggle("open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    // close it again once a link is tapped on a phone
+    toc.addEventListener("click", function (e) {
+      if (e.target.tagName === "A" && window.innerWidth <= 900) {
+        toc.classList.remove("open");
+        btn.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  /* ── highlight the section you are reading ────────────────────── */
+  var links = Array.prototype.slice.call(
+    document.querySelectorAll('#toc a[href^="#"]')
+  );
+  var sections = links
+    .map(function (a) { return document.getElementById(a.getAttribute("href").slice(1)); })
+    .filter(Boolean);
+
+  function setActive(id) {
+    links.forEach(function (a) {
+      a.classList.toggle("active", a.getAttribute("href") === "#" + id);
+    });
+  }
+
+  if ("IntersectionObserver" in window && sections.length) {
+    var seen = {};
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { seen[en.target.id] = en.isIntersecting; });
+      for (var i = 0; i < sections.length; i++) {
+        if (seen[sections[i].id]) { setActive(sections[i].id); break; }
+      }
+    }, { rootMargin: "-90px 0px -60% 0px", threshold: 0 });
+    sections.forEach(function (s) { io.observe(s); });
+  }
+
+  /* ── back to top ──────────────────────────────────────────────── */
+  var top = document.getElementById("top");
+  function onScroll() {
+    if (window.scrollY > 500) { top.classList.add("show"); }
+    else { top.classList.remove("show"); }
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+  top.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+})();
+</script>
+
+</body>
+</html>
